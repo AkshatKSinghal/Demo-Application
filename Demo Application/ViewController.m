@@ -26,6 +26,7 @@
         textLabel.center = CGPointMake(xPos, verticalGap * i);
         [self.view addSubview:textLabel];
     }
+    [self addTapGestureToView:self.view];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -36,6 +37,15 @@
     return textLabel;
 }
 
+- (void)addTapGestureToView:(UIView *)view {
+    UITapGestureRecognizer *tapGestureReconizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureRecognizer:)];
+    [view setUserInteractionEnabled:YES];
+    [view addGestureRecognizer:tapGestureReconizer];
+}
+
+- (void)tapGestureRecognizer:(UITapGestureRecognizer *)tapGesture {
+    NSLog(@"USER TOUCH EVENT%@", tapGesture);
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
