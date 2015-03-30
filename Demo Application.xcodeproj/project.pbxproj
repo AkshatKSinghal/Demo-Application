@@ -14,7 +14,7 @@
 		AC55A6F31AC81FDC0036ACC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC55A6F21AC81FDC0036ACC1 /* Images.xcassets */; };
 		AC55A6F61AC81FDC0036ACC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC55A6F41AC81FDC0036ACC1 /* LaunchScreen.xib */; };
 		AC55A7021AC81FDC0036ACC1 /* Demo_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC55A7011AC81FDC0036ACC1 /* Demo_ApplicationTests.m */; };
-		AC55A79B1AC858FE0036ACC1 /* Swizzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC55A79A1AC858FE0036ACC1 /* Swizzle.framework */; };
+		AC55A7A11AC99B060036ACC1 /* Swizzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC55A7A01AC99B060036ACC1 /* Swizzle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		AC55A6FB1AC81FDC0036ACC1 /* Demo ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC55A7001AC81FDC0036ACC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC55A7011AC81FDC0036ACC1 /* Demo_ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_ApplicationTests.m; sourceTree = "<group>"; };
-		AC55A79A1AC858FE0036ACC1 /* Swizzle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swizzle.framework; sourceTree = "<group>"; };
+		AC55A7A01AC99B060036ACC1 /* Swizzle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swizzle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC55A79B1AC858FE0036ACC1 /* Swizzle.framework in Frameworks */,
+				AC55A7A11AC99B060036ACC1 /* Swizzle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 		AC55A6D91AC81FDC0036ACC1 = {
 			isa = PBXGroup;
 			children = (
-				AC55A79A1AC858FE0036ACC1 /* Swizzle.framework */,
+				AC55A7A01AC99B060036ACC1 /* Swizzle.framework */,
 				AC55A6E41AC81FDC0036ACC1 /* Demo Application */,
 				AC55A6FE1AC81FDC0036ACC1 /* Demo ApplicationTests */,
 				AC55A6E31AC81FDC0036ACC1 /* Products */,
@@ -347,13 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Demo",
-					Application,
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Swizzle-asivhajixvoainerdxevfapgonge/Build/Products/Debug-iphoneos",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = "Demo Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -368,13 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Demo",
-					Application,
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Swizzle-asivhajixvoainerdxevfapgonge/Build/Products/Debug-iphoneos",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = "Demo Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -438,6 +426,7 @@
 				AC55A7071AC81FDC0036ACC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC55A7081AC81FDC0036ACC1 /* Build configuration list for PBXNativeTarget "Demo ApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +435,7 @@
 				AC55A70A1AC81FDC0036ACC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
